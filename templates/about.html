@@ -1,0 +1,71 @@
+{% include 'header.html' %}
+
+<div class="px-4 py-5 my-1 text-center">
+    <img class="d-block mx-auto mb-1" src="/static/3193931-200.png" alt="" width="40" height="40">
+    <h1 class="display-6 fw-bold text-body-emphasis">Βιογραφική περίληψη</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at aliquet erat, vitae porta augue. Morbi ultricies metus odio. Suspendisse ultricies neque at turpis laoreet, efficitur vehicula diam mollis. Aliquam feugiat dictum enim, ac convallis eros pretium varius. Mauris ut leo in ex lacinia mattis nec ut leo. Donec dignissim diam nec rutrum cursus. Suspendisse ornare, elit aliquam consectetur lacinia, mauris dui volutpat tortor, nec finibus leo nulla ut ante. Aliquam tincidunt fringilla turpis ut aliquam. Proin ac magna id sapien efficitur commodo.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="static/CV fake.png" download>
+          <button type="button" class="btn btn-secondary btn-lg px-4 gap-3">Download CV</button>
+        </a>
+      </div>
+    </div>
+</div>
+
+<div class="container px-4 py-2" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Εργασιακή εμπειρία</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+
+      <a href="{{ url_for('project_1') }}">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/6481f514bbd8b400195beab3.webp'); background-position: center; background-size: cover; height: 600px;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-0 mt-0 mb-4 display-6 lh-1 fw-bold">Project 1</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <small>Berlin</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="{{ url_for('project_2') }}">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/Wolfsburg_VW-Werk.jpg'); background-position: center; background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-0 mt-0 mb-4 display-6 lh-1 fw-bold">Project 2</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <small>London</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+      <a href="{{ url_for('project_3') }}">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/lalit-kumar-HpPmiduLDC0-unsplash-scaled.jpg'); background-position: center; background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-0 mt-0 mb-4 display-6 lh-1 fw-bold">Project 3</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <small>Athens</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </a>
+
+    </div>
+</div>
+
+
+{% include 'footer.html' %}
