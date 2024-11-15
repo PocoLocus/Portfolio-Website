@@ -1,8 +1,6 @@
-Flask~=2.3.2
-Jinja2==3.1.4
-python-dotenv==1.0.1
-requests==2.32.3
-WTForms~=3.0.1
-Werkzeug~=3.0.0
-gunicorn==21.2.0
-flask_bootstrap
+Flask==2.3.2
+Flask-Bootstrap==3.1.1.2
+Flask-WTF==1.0.1
+Werkzeug==2.3.4
+wtforms==3.0.1
+python-dotenv==1.0.0
