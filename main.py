@@ -1,7 +1,6 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, redirect
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from werkzeug.utils import redirect
 from wtforms import StringField, EmailField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired
 from smtplib import SMTP
