@@ -1,5 +1,5 @@
 from flask import Flask, url_for, render_template
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from werkzeug.utils import redirect
 from wtforms import StringField, EmailField, TextAreaField, SubmitField
@@ -22,7 +22,7 @@ app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 
 text_subtype = 'plain'
 
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap(app)
 
 @app.route("/")
 def home():
